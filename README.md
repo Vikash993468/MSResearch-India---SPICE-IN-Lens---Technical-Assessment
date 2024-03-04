@@ -20,4 +20,5 @@ The file will be downloaded in the default folder of the browser.
 
 
 
+After Successfull completion of the script ,The PDF will be downloaded .
 Check Your Browser default download path (Usually `/Downloads` folder) , the pdf should has been downloaded.
