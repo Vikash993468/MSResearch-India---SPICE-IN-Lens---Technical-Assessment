@@ -1,67 +1,102 @@
 {
-  "id": "87cd550d-be32-4551-aea8-dbba6c39018f",
+  "id": "83739aec-7fea-41a8-b03d-c246f8533cb6",
   "version": "2.0",
-  "name": "project-2_MS_Research_OA",
+  "name": "p1",
   "url": "https://dspace.mit.edu",
   "tests": [{
-    "id": "a9fb215b-6b62-4c3f-928c-6414f2129633",
-    "name": "final_test",
+    "id": "c73c37d7-5977-404a-87fd-ba8317e16e99",
+    "name": "t11",
     "commands": [{
-      "id": "126949f6-7f3e-461d-9405-433d05471ce3",
+      "id": "2ef8bf8d-59f5-45b7-8010-71f62c4eea03",
       "comment": "",
       "command": "open",
       "target": "/",
       "targets": [],
       "value": ""
     }, {
-      "id": "10ef9628-3873-4cf9-a47d-bc590102384f",
+      "id": "05385c00-a26e-41a0-b024-6b04bc9fd779",
       "comment": "",
       "command": "setWindowSize",
-      "target": "960x1053",
+      "target": "875x1016",
       "targets": [],
       "value": ""
     }, {
-      "id": "f18bb368-3c36-4d22-b4e4-48817f3e2813",
+      "id": "d1701c6b-5806-41a1-bc9a-fb7fcc24a251",
       "comment": "",
       "command": "click",
-      "target": "css=.icon-bar:nth-child(2)",
+      "target": "id=main-container",
       "targets": [
-        ["css=.icon-bar:nth-child(2)", "css:finder"],
-        ["xpath=//div[@id='main-container']/div/button/span[2]", "xpath:idRelative"],
-        ["xpath=//button/span[2]", "xpath:position"]
+        ["id=main-container", "id"],
+        ["css=#main-container", "css:finder"],
+        ["xpath=//div[@id='main-container']", "xpath:attributes"],
+        ["xpath=//div[4]", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "b039be7b-8baa-4da8-a98a-3a89b503aca4",
+      "id": "f1e0b963-aaf3-48ef-94da-af3d2fe39006",
       "comment": "",
       "command": "click",
-      "target": "linkText=Titles",
+      "target": "css=.navbar-toggle",
       "targets": [
-        ["linkText=Titles", "linkText"],
-        ["css=.list-group-item:nth-child(5)", "css:finder"],
-        ["xpath=(//a[contains(text(),'Titles')])[2]", "xpath:link"],
-        ["xpath=//div[@id='aspect_viewArtifacts_Navigation_list_browse']/a[5]", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '/browse?type=title')])[2]", "xpath:href"],
-        ["xpath=//a[5]", "xpath:position"]
+        ["css=.navbar-toggle", "css:finder"],
+        ["xpath=//button[@type='button']", "xpath:attributes"],
+        ["xpath=//div[@id='main-container']/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Toggle navigation')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "e5252d25-f29a-4d6e-a742-24feedd6ec5a",
+      "id": "847f3f9d-9495-4d80-83f9-be9be2f170af",
       "comment": "",
       "command": "click",
-      "target": "linkText=0 + 0 = 1 : the appliance model of selling software bundled with hardware",
+      "target": "linkText=By Issue Date",
       "targets": [
-        ["linkText=0 + 0 = 1 : the appliance model of selling software bundled with hardware", "linkText"],
+        ["linkText=By Issue Date", "linkText"],
+        ["css=#aspect_viewArtifacts_Navigation_list_browse > .list-group-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'By Issue Date')]", "xpath:link"],
+        ["xpath=//div[@id='aspect_viewArtifacts_Navigation_list_browse']/a[3]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/browse?type=dateissued')])[2]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'By Issue Date')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba156434-1c1e-4b84-8470-ad16c01af5a6",
+      "comment": "",
+      "command": "select",
+      "target": "id=aspect_artifactbrowser_ConfigurableBrowse_field_year",
+      "targets": [],
+      "value": "label=2024"
+    }, {
+      "id": "f3dd6dac-fd56-4da0-815d-30f80946dd0a",
+      "comment": "",
+      "command": "click",
+      "target": "css=#aspect_artifactbrowser_ConfigurableBrowse_field_year > option:nth-child(2)",
+      "targets": [
+        ["css=#aspect_artifactbrowser_ConfigurableBrowse_field_year > option:nth-child(2)", "css:finder"],
+        ["xpath=//option[@value='2024']", "xpath:attributes"],
+        ["xpath=//select[@id='aspect_artifactbrowser_ConfigurableBrowse_field_year']/option[2]", "xpath:idRelative"],
+        ["xpath=//option[2]", "xpath:position"],
+        ["xpath=//option[contains(.,'2024')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "acd692fc-d62a-43a9-af6e-b4362359ff06",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Energy-Stable Global Radial Basis Function Methods on Summation-By-Parts Form",
+      "targets": [
+        ["linkText=Energy-Stable Global Radial Basis Function Methods on Summation-By-Parts Form", "linkText"],
         ["css=.ds-artifact-item:nth-child(1) .col-sm-9 a", "css:finder"],
-        ["xpath=//a[contains(text(),'0 + 0 = 1 : the appliance model of selling software bundled with hardware')]", "xpath:link"],
-        ["xpath=//div[@id='aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-title-results']/ul/li/div/div[2]/div/h4/a", "xpath:idRelative"],
-        ["xpath=(//a[contains(@href, '/handle/1721.1/39504')])[2]", "xpath:href"],
+        ["xpath=//a[contains(text(),'Energy-Stable Global Radial Basis Function Methods on Summation-By-Parts Form')]", "xpath:link"],
+        ["xpath=//div[@id='aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-dateissued-results']/ul/li/div/div[2]/div/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/handle/1721.1/153287')])[2]", "xpath:href"],
         ["xpath=//h4/a", "xpath:position"],
-        ["xpath=//a[contains(.,'0 + 0 = 1 : the appliance model of selling software bundled with hardware')]", "xpath:innerText"]
+        ["xpath=//a[contains(.,'Energy-Stable Global Radial Basis Function Methods on Summation-By-Parts Form')]", "xpath:innerText"]
       ],
       "value": ""
     }, {
-      "id": "2f220967-5539-46db-aa5f-2492db1a85d1",
+      "id": "dd0a6a98-3f94-404b-92f8-122678c95179",
       "comment": "",
       "command": "click",
       "target": "linkText=Download",
@@ -70,7 +105,7 @@
         ["css=.download-button", "css:finder"],
         ["xpath=//a[contains(text(),'Download')]", "xpath:link"],
         ["xpath=//div[@id='aspect_versioning_VersionNoticeTransformer_div_item-view']/div/div[2]/div/div/div[2]/div/div/a", "xpath:idRelative"],
-        ["xpath=//a[contains(@href, '/bitstream/handle/1721.1/39504/173843335-MIT.pdf?sequence=2&isAllowed=y')]", "xpath:href"],
+        ["xpath=//a[contains(@href, '/bitstream/handle/1721.1/153287/10915_2023_Article_2427.pdf?sequence=1&isAllowed=y')]", "xpath:href"],
         ["xpath=//div[2]/div/div/a", "xpath:position"],
         ["xpath=//a[contains(.,'Download')]", "xpath:innerText"]
       ],
@@ -78,12 +113,12 @@
     }]
   }],
   "suites": [{
-    "id": "9dc7da98-6b50-438a-b95a-3853ea89b9ae",
+    "id": "f067a641-5bf3-4e8a-97b7-b2d0db7aa7f2",
     "name": "Default Suite",
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["a9fb215b-6b62-4c3f-928c-6414f2129633"]
+    "tests": ["c73c37d7-5977-404a-87fd-ba8317e16e99"]
   }],
   "urls": ["https://dspace.mit.edu/"],
   "plugins": []
