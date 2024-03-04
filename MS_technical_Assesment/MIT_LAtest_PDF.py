@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import os
 
-
+# Getting the default path of the browser (This is where PDF's will be downloaded/stored)
 def get_default_download_directory():
     return os.path.join(os.path.expanduser("~"), "Downloads")
 
