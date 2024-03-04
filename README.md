@@ -8,8 +8,12 @@ First Clone the repository
 `git clone https://github.com/Vikash993468/MSResearch-India---SPICE-IN-Lens---Technical-Assessment.git`
 
 enter into MS_technical_Assesment directory
+
 `cd MS_technical_Assesment/`
+
 run the python script
+
 `python3 MIT_LAtest_PDF.py`
+
 
 Check Your Browser default download path (Usually `/Downloads` folder) , the pdf should has been downloaded.
