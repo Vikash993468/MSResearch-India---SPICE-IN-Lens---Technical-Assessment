@@ -1,0 +1,90 @@
+{
+  "id": "87cd550d-be32-4551-aea8-dbba6c39018f",
+  "version": "2.0",
+  "name": "project-2_MS_Research_OA",
+  "url": "https://dspace.mit.edu",
+  "tests": [{
+    "id": "a9fb215b-6b62-4c3f-928c-6414f2129633",
+    "name": "final_test",
+    "commands": [{
+      "id": "126949f6-7f3e-461d-9405-433d05471ce3",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "10ef9628-3873-4cf9-a47d-bc590102384f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "960x1053",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f18bb368-3c36-4d22-b4e4-48817f3e2813",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-bar:nth-child(2)",
+      "targets": [
+        ["css=.icon-bar:nth-child(2)", "css:finder"],
+        ["xpath=//div[@id='main-container']/div/button/span[2]", "xpath:idRelative"],
+        ["xpath=//button/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b039be7b-8baa-4da8-a98a-3a89b503aca4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Titles",
+      "targets": [
+        ["linkText=Titles", "linkText"],
+        ["css=.list-group-item:nth-child(5)", "css:finder"],
+        ["xpath=(//a[contains(text(),'Titles')])[2]", "xpath:link"],
+        ["xpath=//div[@id='aspect_viewArtifacts_Navigation_list_browse']/a[5]", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/browse?type=title')])[2]", "xpath:href"],
+        ["xpath=//a[5]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e5252d25-f29a-4d6e-a742-24feedd6ec5a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=0 + 0 = 1 : the appliance model of selling software bundled with hardware",
+      "targets": [
+        ["linkText=0 + 0 = 1 : the appliance model of selling software bundled with hardware", "linkText"],
+        ["css=.ds-artifact-item:nth-child(1) .col-sm-9 a", "css:finder"],
+        ["xpath=//a[contains(text(),'0 + 0 = 1 : the appliance model of selling software bundled with hardware')]", "xpath:link"],
+        ["xpath=//div[@id='aspect_artifactbrowser_ConfigurableBrowse_div_browse-by-title-results']/ul/li/div/div[2]/div/h4/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '/handle/1721.1/39504')])[2]", "xpath:href"],
+        ["xpath=//h4/a", "xpath:position"],
+        ["xpath=//a[contains(.,'0 + 0 = 1 : the appliance model of selling software bundled with hardware')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f220967-5539-46db-aa5f-2492db1a85d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Download",
+      "targets": [
+        ["linkText=Download", "linkText"],
+        ["css=.download-button", "css:finder"],
+        ["xpath=//a[contains(text(),'Download')]", "xpath:link"],
+        ["xpath=//div[@id='aspect_versioning_VersionNoticeTransformer_div_item-view']/div/div[2]/div/div/div[2]/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/bitstream/handle/1721.1/39504/173843335-MIT.pdf?sequence=2&isAllowed=y')]", "xpath:href"],
+        ["xpath=//div[2]/div/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Download')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "9dc7da98-6b50-438a-b95a-3853ea89b9ae",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["a9fb215b-6b62-4c3f-928c-6414f2129633"]
+  }],
+  "urls": ["https://dspace.mit.edu/"],
+  "plugins": []
+}
