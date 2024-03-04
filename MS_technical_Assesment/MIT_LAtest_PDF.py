@@ -7,7 +7,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import os
 
-# Getting the default path of the browser (This is where PDF's will be downloaded/stored)
+
 def get_default_download_directory():
     return os.path.join(os.path.expanduser("~"), "Downloads")
 
@@ -29,8 +29,11 @@ driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), opti
 
 driver.get("https://dspace.mit.edu/")
 driver.maximize_window()
-driver.find_element(By.LINK_TEXT, "Titles").click()
-driver.find_element(By.LINK_TEXT, "0 + 0 = 1 : the appliance model of selling software bundled with hardware").click()
+driver.find_element(By.LINK_TEXT, "By Issue Date").click()
+dropdown = driver.find_element(By.ID, "aspect_artifactbrowser_ConfigurableBrowse_field_year")
+dropdown.find_element(By.XPATH, "//option[. = '2024']").click()
+driver.find_element(By.CSS_SELECTOR, "#aspect_artifactbrowser_ConfigurableBrowse_field_year > option:nth-child(2)").click()
+driver.find_element(By.LINK_TEXT, "Energy-Stable Global Radial Basis Function Methods on Summation-By-Parts Form").click()
 driver.find_element(By.LINK_TEXT, "Download").click()
 
 
